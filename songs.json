@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Senja di Ujung Kota",
+    "artist": "Your Band Name",
+    "album": "Album Pertama",
+    "duration": "3:45",
+    "cover": "/assets/covers/senja.jpg",
+    "audio": "/assets/audio/senja.mp3",
+    "lyrics": "Di ujung senja ku termenung\nMengingat kembali kenangan\nTentang kita yang dulu pernah\nBerbagi cerita dan tawa\n\nReff:\nSenja di ujung kota\nMengingatkanku padamu\nMeski kau telah tiada\nKau selalu di hatiku\n\nWalau waktu terus berlalu\nKenangan takkan pernah pudar\nKau selalu dalam doaku\nSampai kita bertemu lagi"
+  },
+  {
+    "id": 2,
+    "title": "Rindu dalam Hujan",
+    "artist": "Your Band Name",
+    "album": "Album Pertama",
+    "duration": "4:12",
+    "cover": "/assets/covers/rindu.jpg",
+    "audio": "/assets/audio/rindu.mp3",
+    "lyrics": "Hujan turun di malam ini\nMembasahi jalanan sepi\nSeperti air mataku\nYang terus mengalir untukmu\n\nReff:\nRindu ini semakin dalam\nSaat hujan turun perlahan\nKu ingin kau disini\nMenemaniku lagi\n\nBiarkan hujan ini\nMembasahi rasa rinduku\nSemoga suatu hari nanti\nKau kembali padaku"
+  }
+]
