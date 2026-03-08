@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Musik - Karya Sendiri</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-headphones"></i>
+                <span>MyMusic</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="active"><i class="fas fa-home"></i> Beranda</a>
+                <a href="#"><i class="fas fa-search"></i> Cari</a>
+                <a href="#"><i class="fas fa-library"></i> Library</a>
+            </nav>
 
+            <div class="playlist-section">
+                <h3>Playlist Saya</h3>
+                <ul class="playlist-list">
+                    <li><i class="fas fa-heart"></i> Lagu Favorit</li>
+                    <li><i class="fas fa-music"></i> Karya Sendiri</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <div class="header-nav">
+                    <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="user-menu">
+                    <i class="fas fa-bell"></i>
+                    <div class="user-profile">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Username</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="greeting">
+                <h1>Selamat datang kembali!</h1>
+                <p>Mendengarkan musik karyamu sendiri</p>
+            </section>
+
+            <!-- Featured Songs -->
+            <section class="featured-section">
+                <h2>Karya Terbaru</h2>
+                <div class="songs-grid" id="songs-grid">
+                    <!-- Songs akan di-load via JavaScript -->
+                </div>
+            </section>
+
+            <!-- Popular Songs -->
+            <section class="popular-section">
+                <h2>Populer Minggu Ini</h2>
+                <div class="popular-list" id="popular-list">
+                    <!-- Popular songs akan di-load via JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Now Playing Bar -->
+        <div class="now-playing-bar">
+            <div class="now-playing-left">
+                <img src="" alt="Now Playing" class="now-playing-cover" id="now-playing-cover">
+                <div class="song-info">
+                    <h4 id="now-playing-title">Pilih lagu untuk diputar</h4>
+                    <p id="now-playing-artist">-</p>
+                </div>
+                <button class="like-btn"><i class="far fa-heart"></i></button>
+            </div>
+
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button class="control-btn"><i class="fas fa-random"></i></button>
+                    <button class="control-btn"><i class="fas fa-step-backward"></i></button>
+                    <button class="control-btn play-btn" id="play-pause-btn"><i class="fas fa-play"></i></button>
+                    <button class="control-btn"><i class="fas fa-step-forward"></i></button>
+                    <button class="control-btn"><i class="fas fa-repeat"></i></button>
+                </div>
+                <div class="progress-bar">
+                    <span class="current-time" id="current-time">0:00</span>
+                    <div class="progress-container" id="progress-container">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <span class="total-time" id="total-time">0:00</span>
+                </div>
+            </div>
+
+            <div class="now-playing-right">
+                <button class="lyrics-btn" id="show-lyrics-btn"><i class="fas fa-file-alt"></i> Lirik</button>
+                <button class="volume-btn"><i class="fas fa-volume-up"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lyrics Modal -->
+    <div class="modal" id="lyrics-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="lyrics-song-title">Lirik Lagu</h2>
+                <button class="close-btn" id="close-lyrics">&times;</button>
+            </div>
+            <div class="modal-body" id="lyrics-content">
+                <!-- Lirik akan ditampilkan di sini -->
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio-player"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
